@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">AlertaHuellita</string>
+
+
+    //REGISTRO DE USUARIOS (NO LO BORRES QUE SI LO TIENES FIJATE EN TU XML)
+    <string name="textfield_Nombres">Nombres</string>
+    <string name="textfield_ApellidoPaterno">Apellido Paterno</string>
+    <string name="textfield_ApellidoMaterno">Apellido Materno</string>
+    <string name="textfield_DNI">DNI</string>
+    <string name="textfield_Numero_Telefono">Numero de Telefono</string>
+    <string name="textfield_Correo">Correo Electronico (Opcional)</string>
+    <string name="textfield_Contraseña">Contraseña</string>
+    <string name="textfield_ConfirmarSucontraseña">Confirmar su contraseña</string>
+    <string name="textfield_Ubicacion">Ubicacion</string>
+
+    //MENU
+    <string name="abrir_menu">Abrir menú lateral</string>
+    <string name="cerrar_menu">Cerrar menú lateral</string>
+
+</resources>

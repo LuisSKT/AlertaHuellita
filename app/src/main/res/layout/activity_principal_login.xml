@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".LoginActivity"
+    android:background="@drawable/fondo_2">
+
+    <!--TEXTO LOGIN-->
+    <TextView
+        android:text="LOGIN"
+        android:textAllCaps="true"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!--IMAGEN-->
+    <ImageView
+        android:src="@drawable/icon_login_4"
+        android:layout_marginTop="20dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <!--DNI-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundColor="@android:color/white"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/icon_wa1">
+        <EditText
+            android:id="@+id/et_DNI"
+            android:hint="DNI"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--PASSWORD-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundColor="@android:color/white"
+        app:passwordToggleEnabled="true">
+        <EditText
+            android:id="@+id/et_Password"
+            android:hint="Contraseña"
+            android:textStyle="bold"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--RECORDAR CONTRASEÑA-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="start">
+        <!-- SWITCH -->
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/sw_RecordarContraseña"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <!-- TEXTO -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recordar contraseña"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <!--BTN INGRESAR-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_Ingresar"
+        android:text="INGRESAR"
+        android:textAllCaps="true"
+        android:layout_marginTop="15dp"
+        app:cornerRadius="8dp"
+        android:layout_width="250dp"
+        android:layout_height="60dp"/>
+
+    <!--BTN RECUPERAR CONTRASEÑA-->
+    <TextView
+        android:id="@+id/olvidaste_contraseña"
+        android:text="¿Olvidaste tu contraseña?"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!--BTN REGISTRAR-->
+    <TextView
+        android:id="@+id/tv_registrarme"
+        android:text="REGISTRARME"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                            <!--TIPS-->
+    <!-- app:passwordToggleEnabled="true" = Es para activar el ojito-->
+    <!--app:endIconMode="custom" = Es mi iconos end es al final aviso
+        app:boxBackgroundColor="@android:color/white" = Es para el fondo de caja
+        app:passwordToggleEnabled="true" = Es famoso ojito de contraseña-->

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- PERMISOS PARA LA UBICACION -->
+    <!-- Permiso para conectarse a internet para que cargue Google Maps -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Permiso para obtener la ubicación aproximada por WiFi o antenas, menos preciso -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- Permiso para obtener la ubicación precisa osea el GPS, exacta, para el puntito azul -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AlertaHuellita"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".MENU.DonacionesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MENU.ReportesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MENU.NosotrosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MENU.UbicacionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MENU.ContactanosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MENU.PerfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".INTERFAZ.BusquedaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".INTERFAZ.AbandonoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".INTERFAZ.EnfermedadesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".INTERFAZ.AccidentesActivity"
+            android:exported="false" /> <!-- Esto  Permite que la app entre al puerto 8080 sin bloquear la conexión -->
+        <!-- ESTO ES LA PANTALLA OLVIDASTE TU CONTRASEÑA -->
+        <activity
+            android:name=".Olvidaste_tu_passwordActivity"
+            android:exported="false" /> <!-- ESTO ES LA PANTALLA DEL MAPA -->
+        <!-- ESTO ES LA PANTALLA DEL REGISTRO -->
+        <activity
+            android:name=".RegistroActivity"
+            android:exported="false" /> <!-- ESTO ES LA PANTALLA PRINCIPAL AL MOMENTO DE ABRIRSE EL APP -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- ESTO ES LA PANTALLA MAIN -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+    </application>
+
+</manifest>
